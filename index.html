@@ -12,7 +12,103 @@
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
     </header>
     <main>
+<<<<<<< HEAD
+      <section class="card" id="html-section">
+        <h2>HTML</h2>
+        <h3>General Description and Purpose</h3>
+        <p>Hypertext Markup Language (HTML) is one of the 3 cornerstone languages that are used in web development...which are HTML, CSS (Cascading Style Sheets), and JS (JavaScript). HTML is used to create the structure of a webpage. It is made up of elements which work together to provide content and the basic framework for all webpages that are on the internet.</p>
+        <p>HTML elements are arranged in a specific order in a webpage definition file to establish the design that is desired by the webpage developer[s] to display the involved information of the webpage. Example elements are Text elements, Image elements, Header elements, Paragraph elements, List elements, Hyperlink elements, Images, and Footer elements.</p>
+        <h3>Webpage Definition Format With Using HTML Elements and Tags</h3>
+        <p>HTML elements typically have a coding format that includes an opening (starting) angle-bracketed named tag and a closing (ending) angle-bracketed named tag (that includes a special forward-slash character). The HTML terms "element" and "tag" are commonly used interchangeably in the web development world, but it is important to know the difference. The HTML term "element" refers to the entire element code that starts from the opening tag and goes to the closing tag; whereas the HTML term "tag" refers only to only the information that is at inside of and including a left angle bracket and a right angle bracket (typically only 1 side of a tag pair (opening/starting and closing/ending)).</p>
+        <p>The specific webpage definition content that is enclosed in (surrounded by) a particular single set of same-name and same-level tags (opening/starting and closing/ending) is page definition content that is to be treated/rendered by the browser in the same way that is appropriate for the involved tag and content. Each opening/starting tag of an element has various attributes or properties that can be custom-set to control the functional behavior of the tag which effects the display/effect of the particular involved page content.</p>
+        <p>Elements (tag pairs) can be nested within each other...i.e., placed and arranged/displayed in a tiered/outline structure for purposes of logical organization or/and display enhancement purposes. Elements that are nested inside of other upper-level elements are called child elements. The main upper-level element that contains most/all of the nested child elements is called the parent element. The other deeper-level sub-category nested elements that contain other nested elements can be called "containing/category/group" elements in the context of the particular child tier/level. This "parent/child" language is often used by developers to explain the relationship among HTML elements.</p>
+        <p>Elements can be semantic in type (named with an intuitive-usage word) or non-semantic in type. A webpage definition can use both types of elements...but semantic elements; examples of non-semantic elements are "div" and "span" (Refer to below.). At some times the non-semantic elements are simply the most-efficient solution to a structural situation. The most important thing to keep in mind is that it is best practice to use semantic elements whenever possible, especially when the content is visible to users.</p>
+        <p>Some sections/tags/contents of a webpage are visible to the users of the webpage; and some sections/tags/contents are not visible to the users. HTML element tags (their label words) are case-sensitive. Some element types are used to describe a webpage (such as "meta-related elements") and to divide a webpage (such as "content-division elements").</p>
+        <h3>Webpage Primary Specification For HTML</h3>
+        <p>"!DOCTYPE" declaration: The "!DOCTYPE" declaration is placed at the top of the webpage structure to identify to the browser the document type of the webpage. A "!DOCTYPE html" declaration identifies an HTML-format webpage. The "!DOCTYPE" declaration is NOT an "element" that requires a closing/ending tag.</p>
+        <p>"html" element: The "html" element is placed at the top of the webpage but at below the "!DOCTYPE" declaration to mark the content of the website structure definition that uses the HTML format. An included attribute of "lang='en'&nbsp" identifies an HTML webpage that uses the English language. A closing/ending "html" element tag MUST be put at the end of the definition code of the entire webpage.</p>
+        <h3>Examples of Some Common HTML Elements and Tags That Are For Information Layout</h3>
+        <p>Note: Refer to the following link for more information for more information that is about all of the possible HTML elements and tags: <a href="https://www.w3schools.com/tags/default.asp">'https://www.w3schools.com/tags/default.asp'</a>.</p>
+        <ul>
+          <li>"head" element: The head element marks the section of the webpage that contains main system identification information about the webpage. The "head" element contains the metadata of the webpage; Refer to below. The "head" element is different than the "header" element/section; Refer to below.</li>
+          <ul>
+            <li>"meta (type)" elements: The "meta" elements (such as the following examples at below) define metadata of the webpage...such as the character set, description, keywords, author, and viewport. Metadata is data about the webpage that the browser uses to effectively present the webpage to users. Metadata is typically not seen by users, but it contains important information about accessibility, search engines, and performance (Refer to "SEO" in the "title" element section at below.).</li>
+            <ul>
+              <li>"meta charset" element: The "charset" meta-element sets the character-set encoding...such as UTF-8...of the webpage.</li>
+              <li>"meta http-equiv" element: The "http-equiv" meta-element sets an HTTP header for the content: such as "= 'X-UA-Compatible' content='IE=edge'&nbsp".</li>
+              <li>"meta name='viewport' content='width=device-width, initial-scale=1.0'&nbsp" element: This element sets the default view type/format of the webpage.</li>
+            </ul>
+            <ul style="list-style-type: none">
+              <li>Note: Refer to the following link for more about other types of information that can be stored in the meta tag: <a href="https://www.w3schools.com/tags/tag_meta.asp">'https://www.w3schools.com/tags/tag_meta.asp'</a>.</li>
+            </ul>
+          <li>"title" element: The "title" element defines the title of the webpage. This element is required and is extremely important for Search Engine Optimization (SEO). which is the process of improving the ranking of a website in search engines such as Google or Bing. Better SEO results with a website more-frequently being retrieved by web searches that are initiated by users for the topics/keywords of the webpage.</li>
+          <li>"base" element: The "base" element defines the default base URL that is used for all of the links of a webpage.</li>
+          <li>"link" element: The "link" element connects an external resource or stylesheet to the HTML document.</li>
+          <li>"script" element: The "script" element marks the section of the webpage that embeds client-side (user-side) program code scripts in the webpage.</li>
+          <li>"style" element: The "style" element defines the CSS styles associated with a website. Style settings can be set for specific sections of a webpage or/and be set for specific separate elements of a webpage.</li>
+          </ul>
+        </ul>
+        <ul>
+          <li>"body" element: The "body element marks the section of the webpage definition that is the visible content that is shown to the user. The <body> element contains the content that is shown to the user. All of the elements that the user is to see and interact with must be placed inside the "body" element.</li>
+          <ul style="list-style-type: none">
+            <li>+ "id" attribute and "class" attribute: The "id" and "class" attributes are used throughout a webpage structure definition to identify specific desired elements of a webpage and select them for special processing by way of background processes of the wepbage; processes such as with CSS (visual style and format; Refer to below.) and JavaScript (programmed functionality; Refer to below.).</li>
+            <li>+ "alt" attribute: The "alt" attribute contains optional...but recommended...alternate-description text information that describes the appearance/functionality of page elements that are arranged/rendered and accessed (such as pointed-to) on a webpage. This alt-ernate information functionality is essential for indicating to visually-impaired users any items that are accessed or pointed to on a webpage; including page access that occurs from screen-reader software. The alternate information also indicates to sighted users any page items that have not yet been fully loaded/displayed for some reason.</li>
+            <li>+ "style" element: The "style" element defines the CSS styles associated with a website. Style settings can be set for specific sections of a webpage or/and be set for specific separate elements of a webpage.</li>
+          </ul>
+          <ul>
+            <li>"header" element: This optional element marks the content of the standard repeated header/top display section of a webpage. The header section can contain a navigation menu and/or introductory content.</li>
+            <li>"main" element: The "main" element marks the content of the main section of a the webpage.</li>            
+            <ul>
+              <li>"h1", "h2", "h3", "h4", "h5", and "h6" elements: These textual-presentation elements identify the arrangement level and the font size of the text section headings of the webpage. Headings are titles that logically (with textual titles) organize the text description sections of a webpage. Heading level 1 ("h1") is the most-primary and starting section that has the largest font size; and each next-sequence heading level/number (2, 3, 4, 5, and 6) is less-prominent and smaller-sized than the previous level/number.</li>
+              <li>"p" element: The "p" element identifies a paragraph or block of related text.</li>
+              <li>"img" (image) attribute: The "img"/image attribute identifies a graphical image item of the webpage. This element is one of the rare ones that does not require a named closing tag; instead only a "/" character and an end bracket are required at the end of the element line/section.</li>
+              <ul style="list-style-type: none">
+                <li>* "src" attribute: The "src" attribute defines the location/source of the image file. An image source location can be a file that is local to the webpage server or a file that is located at some other location that is on the internet (per URL reference).</ii>
+                <li>* "size" and "width" and "height" attributes: These attributes define the display size of each graphical image/object that is placed on a webpage.</li>
+              </ul>
+              <li>"a" (anchor) element: The "a" element identifies an anchored display/link content component of a webpage that is for a hyperlink (per attribute 'href = page URL or file path'); and the hyperlink creates a clickable link that accesses another webpage/file/resource location. The clickable items of hyperlinks can be picture/images or specific highlight text or even boundary "hot spot" area that is defined on a webpage. For textual hyperlinks...the tags of an "a" element are used to surround only the text that is intended to contain the clickable/underlined link.</li>
+              <li>"br" element: The "br" element creates a line of empty space...i.e, a line break...between 2 areas/blocks of content. This element is one of the rare ones that does not require a named closing tag; instead only a "/" character and an end bracket are required at the end of the element line/section.</li>
+              <li>"section" element: The "section" element is a semantic element that defines an organizational section in the text of a webpage.</li>
+              <li>"div" element: The "div" element marks a division section of the content of the webpage.</li>
+              <li>"span" element: The "span" element marks a separate inline span area of the content of the webpage.</li>
+              <li>"ul" (unordered list) element: The "ul" element marks a section of the webpage that contains an indented "un-ordered" not-numbered list that usually includes bullet/symbol characters; and the lists can have multiple levels and multiple styles of bullet characters. The "ul" element works in conjunction with and surrounds a section of "li" (list item) elements; Refer to below.</li>
+              <ul style="list-style-type: none">
+                <li>* "li" (list item) element: The "li" element marks an item of information that is contained in a single item of an on-ordered list (a bullet) or a single item of an ordered list (a number or sequence letter). Multiple "li" items typically exist in a list. The "li" element works in conjunction with and is surrounded by a "ul" (un-ordered list) element or and "ol" (ordered list) element; refer to above."</li>
+              </ul>
+              <li>"ol" (ordered list) element: The "ol" element marks a section of the webpage that contains an indented "ordered" numbered/sequenced list; and the lists can have multiple levels and multiple styles of numbering/sequencing characters. The "ol" element works in conjunction with and surrounds a section of "li" (list item) elements; Refer to below.</li>
+              <ul style="list-style-type: none">
+                <li>* "li" (list item) element: Refer to the "li" element section at above.</li>
+              </ul>
+            </ul>
+            <li>"footer" element: This optional element marks the content of the standard repeated footer/bottom display section of a webpage. The "footer" section can be used to contain and information or/and links that display the author, copyright, contact information, sitemap, or/and navigation of the webpage.</li>
+          </ul>
+        </ul>
+
+          <section class="card" id="css-section">
+        <h2>CSS</h2>
+        <ul>
+          <li>Enter CSS notes here.</li>
+        </ul>
+      </section>
+   
+      <section class="card" id="git-section">
+        <h2>Git</h2>
+        <ul>
+          <li>git status: checks what branch we are currently on</li>
+          <li>git checkout -b branch-name: creates a new branch and switches to it</li>
+          <li>Enter more Git notes here.</li>
+        </ul>
+      </section>
+   
+      <section class="card" id="javascript-section">
+        <h2>JavaScript</h2>
+        <ul>
+          <li>Enter JavaScript notes here.</li>
+        </ul>  
+      </section>
+=======
       <!-- Student code goes here -->
+>>>>>>> 040eab6a95d44af0ba79a1e1d7ac78555b6b5ca0
     </main>
 
     <footer>
