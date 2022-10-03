@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prework Study Guide</title>
+    <link rel="stylesheet" href="./assets/style.css">
   </head>
   <body>
     <header id="header">
@@ -12,7 +13,6 @@
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
     </header>
     <main>
-<<<<<<< HEAD
       <section class="card" id="html-section">
         <h2>HTML</h2>
         <h3>General Description and Purpose</h3>
@@ -54,7 +54,8 @@
             <li>+ "id" attribute and "class" attribute: The "id" and "class" attributes are used throughout a webpage structure definition to identify specific desired elements of a webpage and select them for special processing by way of background processes of the wepbage; processes such as with CSS (visual style and format; Refer to below.) and JavaScript (programmed functionality; Refer to below.).</li>
             <li>+ "alt" attribute: The "alt" attribute contains optional...but recommended...alternate-description text information that describes the appearance/functionality of page elements that are arranged/rendered and accessed (such as pointed-to) on a webpage. This alt-ernate information functionality is essential for indicating to visually-impaired users any items that are accessed or pointed to on a webpage; including page access that occurs from screen-reader software. The alternate information also indicates to sighted users any page items that have not yet been fully loaded/displayed for some reason.</li>
             <li>+ "style" element: The "style" element defines the CSS styles associated with a website. Style settings can be set for specific sections of a webpage or/and be set for specific separate elements of a webpage.</li>
-          </ul>
+            <li>+ "margin" attribute: A margin indicates the amount of pixel space that is around the outside of an element.</li>
+            <li>+ "padding" attribute: A padding indicates the amount of pixel space that is around the content that is inside an element.</li>          </ul>
           <ul>
             <li>"header" element: This optional element marks the content of the standard repeated header/top display section of a webpage. The header section can contain a navigation menu and/or introductory content.</li>
             <li>"main" element: The "main" element marks the content of the main section of a the webpage.</li>            
@@ -83,8 +84,9 @@
             <li>"footer" element: This optional element marks the content of the standard repeated footer/bottom display section of a webpage. The "footer" section can be used to contain and information or/and links that display the author, copyright, contact information, sitemap, or/and navigation of the webpage.</li>
           </ul>
         </ul>
+      </section>
 
-          <section class="card" id="css-section">
+      <section class="card" id="css-section">
         <h2>CSS</h2>
         <ul>
           <li>Enter CSS notes here.</li>
@@ -93,12 +95,48 @@
    
       <section class="card" id="git-section">
         <h2>Git</h2>
+        <h3>Some Common Commands</h3>
+        <p>(Note: Refer to more-detailed descriptions at below and in the GitHub online Help documentation.)</p>
         <ul>
-          <li>git status: checks what branch we are currently on</li>
-          <li>git checkout -b branch-name: creates a new branch and switches to it</li>
-          <li>Enter more Git notes here.</li>
+          <li>ssh -T git@github.com: establishes an SSH connection</li>
+          <li>git status: checks the current status and processing branch</li>
+          <li>git checkout -b "feature_branch_path": creates a new branch and switches to it</li>
+          <li>git add -A: stages/selects update files for transfer processing</li>
+          <li>git commit -m "comment": commits/readies update files for tranfser processing</li>
+          <li>git pull origin main": ensures that the current repository files are in the local workspace</li>
+          <li>git push origin "feature_branch": transfers the local update files to the remote repository</li>
+          <li>git checkout main: selects the local computer "main" branch</li>
         </ul>
-      </section>
+        <h3>Overall Procedure for Processing New/Update Code Work for Projects</h3>
+        <p>Complete the following steps to save new/update code of project work from the local computer workspace to the GitHub cloud repository system so the code can be checked for accuracy (by collaborative teammates) and tracked (for version control) and saved for official storage and distribution access:</p>
+        <ol>
+          <li>Establish an SSH connection from the local computer to the GitHub cloud system; per command line: "ssh -T git@github.com". Enter the required security passphrase that is prompted for.</li>
+          <li>Make sure that the correct feature branch of the local computer workspace is the current process branch and make sure that the status of the git connection is good; per command line "git status". Add/Change the branch if necessary (per the resulting status message); per command: git checkout -b "feature_branch_path". Include the quote characters and replace the item "feature_branch_path" with the path text of the feature branch folder[s]; and exclude the period character.</li>
+          <li>Add the new/update code files of the local computer workspace to the Git staging area; per command line "git add -A". A successful status message should be displayed.
+          <li>Commit (Ready) the staged new/update code files of the local computer workspace for the GitHub repository transfer process; per command line: git commit -m "comment". Include the quote characters and replace the word "comment" with a brief description about the update; and exclude the period character. A successful status message should be displayed.</li>
+          <li>Make sure that the current local work branch files are up-to-date compared to the GitHub repository files before transferring (uploading) the new/update code to the GitHub system; per command: "git pull origin main". A successful status message should be displayed.</li>
+          <li>Transfer/Push all of the new/update code files from the local computer to a temporary processing "feature" area of the GitHub repository system; per command: git push origin "feature_branch_path". Include the quote characters and replace the item "feature_branch_path" with the path text of the feature branch folder[s]; and exclude the period character. A successful status message should be displayed.</li>
+          <li>Access the GitHub system and navigate to the "prework-study-guide" repository and click/access the "Pull Requests" tab to verify about the successful receiving of the transferred new/update code. The feature path branch name of the transferred code should be indicated in the tab display area.</li>
+          <li>Request for and define a Pull Request (merge pre-processing) by selecting the "New pull request" button of the "Pull Requests" tab. Then use the controls of the displayed window to set the "base" (merge-receive) branch as being the "main" branch...and set the "compare" branch as being the transferred "feature/type" branch; and set a brief title for the pull request and set a brief descriptive comment about the code update. Note: In normal project development work situations this step would also involve the selecting of 1 or more teammate[s] for purposes of code review for accuracy. Lastly click the "Create pull request" button to submit the request.</li>
+          <li>Merge the received comparison branch code files into the base/main branch code files by selecting the "Merge pull request" button and then confirming the merge request. Note: In normal project development work situations this step would also start/precede by with the comment results of the code-accuracy review[s] of 1 or more selected teammate[s].</li>
+          <li>Now that the involved code merge is completed and confirmed...delete the involved temporary working branch by clicking the "Delete branch" button of the displayed dialog box. And also close the involved corresponding GitHub issue by accessing the "Issues" tab and selecting the issue record and then clicking the "Close issue" button. The main branch should now display the merged new/update files that were transferred.</li>
+          <li>Update the local computer workspace main branch files with the updated files of the GitHub main branch...by separately entering the following commmands in the Git Bash console window:</li>
+          <ol type="a">
+            <li>Select the local computer "main" branch; per command: "git checkout main".</li>
+            <li>Transfer/Pull the updated files from the GitHub system to the local computer; per command "git pull origin main".</li>
+          </ol>
+        </ol>
+        <h3>Git-Related Systems and Applications and Attributes</h3>
+        <ul>
+          <li>GitLab: a class project data/information system; GitLab is a single application for the entire software development lifecycle; URL: "https://du.bootcampcontent.com/users/sign_in"</li>
+          <li>GitHub Cloud: an internet-based collaborative project development file/folder storage system and work environment that have robust version-control features and allow for convenient but secure remote file access for viewing and distributing; URL: "https://github.com/"</li>
+          <li>GitHub Bootcamp Repository Specification: attribute text that is used to identify a GitHub repository (set of project files and folders and data); with the "github_user_name" item and the "github_repository_name" item being user-specific and respository-specific; ATTRIBUTE: "git@github.com:github_user_name/github_repository_name.git"</li>
+          <li>GitHub Repository Clone Specification: attribute text that is used in some Git command-line commands to identify a GitHub project repository for purposes of copying/cloning the involved data files/folders; with the "github_user_name" item and the "github_repository_name" item being user-specific and respository-specific; ATTRIBUTE: "git clone git@github.com:github_user_name/github_repository_name.git"</li>
+          <li>GitBash: a local computer console terminal application that is used for issuing Git command-line commands from a local computer workspace to/from the GitHub system (cloud/internet or local deskop)</li>
+          <li>SSH: a secure shell protocol for network file/folder transactions that are executed by way of encrypted key files/fingerprints; used to connect to the GibHub server for a repository connection (for download/pull or upload/push)</li>
+          <li>GitHub Desktop: an available local computer application to quicken/ease some file transactions as compared to the busier internet/cloud GitHub system</li>
+        </ul>
+        </section>
    
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
@@ -106,9 +144,6 @@
           <li>Enter JavaScript notes here.</li>
         </ul>  
       </section>
-=======
-      <!-- Student code goes here -->
->>>>>>> 040eab6a95d44af0ba79a1e1d7ac78555b6b5ca0
     </main>
 
     <footer>
