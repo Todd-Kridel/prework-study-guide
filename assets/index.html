@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prework Study Guide</title>
+    <link rel="stylesheet" href="./assets/style.css">
+  </head>
+  <body>
+    <header id="header">
+      <h1>Prework Study Guide</h1>
+      <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+      <h2>✨ Open the Console to See What's Happening ✨</h2>
+      <p><a href="./README.html">(Click this link for README file information.)</a></p>
+    </header>
+    <main>
+      <section class="card" id="html-section">
+        <h2>HTML</h2>
+        <h3>General Description and Purpose</h3>
+        <p>Hypertext Markup Language (HTML) is one of the 3 cornerstone languages that are used in web development...which are HTML, CSS (Cascading Style Sheets), and JS (JavaScript). HTML is used to create the structure of a webpage. It is made up of elements which work together to provide content and the basic framework for all webpages that are on the internet.</p>
+        <p>HTML elements are arranged in a specific order in a webpage definition file to establish the design that is desired by the webpage developer[s] to display the involved information of the webpage. Example elements are Text elements, Image elements, Header elements, Paragraph elements, List elements, Hyperlink elements, Images, and Footer elements.</p>
+        <h3>Webpage Definition Format With Using HTML Elements and Tags</h3>
+        <p>HTML elements typically have a coding format that includes an opening (starting) angle-bracketed named tag and a closing (ending) angle-bracketed named tag (that includes a special forward-slash character). The HTML terms "element" and "tag" are commonly used interchangeably in the web development world, but it is important to know the difference. The HTML term "element" refers to the entire element code that starts from the opening tag and goes to the closing tag; whereas the HTML term "tag" refers only to only the information that is at inside of and including a left angle bracket and a right angle bracket (typically only 1 side of a tag pair (opening/starting and closing/ending)).</p>
+        <p>The specific webpage definition content that is enclosed in (surrounded by) a particular single set of same-name and same-level tags (opening/starting and closing/ending) is page definition content that is to be treated/rendered by the browser in the same way that is appropriate for the involved tag and content. Each opening/starting tag of an element has various attributes or properties that can be custom-set to control the functional behavior of the tag which effects the display/effect of the particular involved page content.</p>
+        <p>Elements (tag pairs) can be nested within each other...i.e., placed and arranged/displayed in a tiered/outline structure for purposes of logical organization or/and display enhancement purposes. Elements that are nested inside of other upper-level elements are called child elements. The main upper-level element that contains most/all of the nested child elements is called the parent element. The other deeper-level sub-category nested elements that contain other nested elements can be called "containing/category/group" elements in the context of the particular child tier/level. This "parent/child" language is often used by developers to explain the relationship among HTML elements.</p>
+        <p>Elements can be semantic in type (named with an intuitive-usage word) or non-semantic in type. A webpage definition can use both types of elements...but semantic elements; examples of non-semantic elements are "div" and "span" (Refer to below.). At some times the non-semantic elements are simply the most-efficient solution to a structural situation. The most important thing to keep in mind is that it is best practice to use semantic elements whenever possible, especially when the content is visible to users.</p>
+        <p>Some sections/tags/contents of a webpage are visible to the users of the webpage; and some sections/tags/contents are not visible to the users. HTML element tags (their label words) are case-sensitive. Some element types are used to describe a webpage (such as "meta-related elements") and to divide a webpage (such as "content-division elements").</p>
+        <h3>Webpage Primary Specification For HTML</h3>
+        <p>"!DOCTYPE" declaration: The "!DOCTYPE" declaration is placed at the top of the webpage structure to identify to the browser the document type of the webpage. A "!DOCTYPE html" declaration identifies an HTML-format webpage. The "!DOCTYPE" declaration is NOT an "element" that requires a closing/ending tag.</p>
+        <p>"html" element: The "html" element is placed at the top of the webpage but at below the "!DOCTYPE" declaration to mark the content of the website structure definition that uses the HTML format. An included attribute of "lang='en'&nbsp" identifies an HTML webpage that uses the English language. A closing/ending "html" element tag MUST be put at the end of the definition code of the entire webpage.</p>
+        <h3>Examples of Some Common HTML Elements and Tags That Are For Information Layout</h3>
+        <p>Note: Refer to the following link for more information for more information that is about all of the possible HTML elements and tags: <a href="https://www.w3schools.com/tags/default.asp">'https://www.w3schools.com/tags/default.asp'</a>.</p>
+        <ul>
+          <li>"head" element: The head element marks the section of the webpage that contains main system identification information about the webpage. The "head" element contains the metadata of the webpage; Refer to below. The "head" element is different than the "header" element/section; Refer to below.</li>
+          <ul>
+            <li>"meta (type)" elements: The "meta" elements (such as the following examples at below) define metadata of the webpage...such as the character set, description, keywords, author, and viewport. Metadata is data about the webpage that the browser uses to effectively present the webpage to users. Metadata is typically not seen by users, but it contains important information about accessibility, search engines, and performance (Refer to "SEO" in the "title" element section at below.).</li>
+            <ul>
+              <li>"meta charset" element: The "charset" meta-element sets the character-set encoding...such as UTF-8...of the webpage.</li>
+              <li>"meta http-equiv" element: The "http-equiv" meta-element sets an HTTP header for the content: such as "= 'X-UA-Compatible' content='IE=edge'&nbsp".</li>
+              <li>"meta name='viewport' content='width=device-width, initial-scale=1.0'&nbsp" element: This element sets the default view type/format of the webpage.</li>
+            </ul>
+            <ul style="list-style-type: none">
+              <li>Note: Refer to the following link for more about other types of information that can be stored in the meta tag: <a href="https://www.w3schools.com/tags/tag_meta.asp">'https://www.w3schools.com/tags/tag_meta.asp'</a>.</li>
+            </ul>
+          <li>"title" element: The "title" element defines the title of the webpage. This element is required and is extremely important for Search Engine Optimization (SEO). which is the process of improving the ranking of a website in search engines such as Google or Bing. Better SEO results with a website more-frequently being retrieved by web searches that are initiated by users for the topics/keywords of the webpage.</li>
+          <li>"base" element: The "base" element defines the default base URL that is used for all of the links of a webpage.</li>
+          <li>"link" element: The "link" element connects an external resource or stylesheet to the HTML document.</li>
+          <li>"script" element: The "script" element marks the section of the webpage that embeds client-side (user-side) program code scripts in the webpage.</li>
+          <li>"style" element: The "style" element defines the CSS styles associated with a website. Style settings can be set for specific sections of a webpage or/and be set for specific separate elements of a webpage.</li>
+          </ul>
+        </ul>
+        <ul>
+          <li>"body" element: The "body" element marks the section of the webpage definition that is the visible content that is shown to the user. The <body> element contains the content that is shown to the user. All of the elements that the user is to see and interact with must be placed inside the "body" element.</li>
+          <ul style="list-style-type: none">
+            <li>+ "id" attribute and "class" attribute: The "id" and "class" attributes are used throughout a webpage structure definition to identify specific desired elements of a webpage and select them for special processing by way of background processes of the wepbage; processes such as with CSS (visual style and format; Refer to below.) and JavaScript (programmed functionality; Refer to below.).</li>
+            <li>+ "alt" attribute: The "alt" attribute contains optional...but recommended...alternate-description text information that describes the appearance/functionality of page elements that are arranged/rendered and accessed (such as pointed-to) on a webpage. This alt-ernate information functionality is essential for indicating to visually-impaired users any items that are accessed or pointed to on a webpage; including page access that occurs from screen-reader software. The alternate information also indicates to sighted users any page items that have not yet been fully loaded/displayed for some reason.</li>
+            <li>+ "style" element: The "style" element defines the CSS styles associated with a website. Style settings can be set for specific sections of a webpage or/and be set for specific separate elements of a webpage.</li>
+            <li>+ "margin" attribute: A margin indicates the amount of pixel space that is around the outside of an element.</li>
+            <li>+ "padding" attribute: A padding indicates the amount of pixel space that is around the content that is inside an element.</li>
+          </ul>
+          <ul>
+            <li>"header" element: This optional element marks the content of the standard repeated header/top display section of a webpage. The header section can contain a navigation menu and/or introductory content.</li>
+            <li>"main" element: The "main" element marks the content of the main section of a the webpage.</li>            
+            <ul>
+              <li>"h1", "h2", "h3", "h4", "h5", and "h6" elements: These textual-presentation elements identify the arrangement level and the font size of the text section headings of the webpage. Headings are titles that logically (with textual titles) organize the text description sections of a webpage. Heading level 1 ("h1") is the most-primary and starting section that has the largest font size; and each next-sequence heading level/number (2, 3, 4, 5, and 6) is less-prominent and smaller-sized than the previous level/number.</li>
+              <li>"p" element: The "p" element identifies a paragraph or block of related text.</li>
+              <li>"img" (image) attribute: The "img"/image attribute identifies a graphical image item of the webpage. This element is one of the rare ones that does not require a named closing tag; instead only a "/" character and an end bracket are required at the end of the element line/section.</li>
+              <ul style="list-style-type: none">
+                <li>* "src" attribute: The "src" attribute defines the location/source of the image file. An image source location can be a file that is local to the webpage server or a file that is located at some other location that is on the internet (per URL reference).</ii>
+                <li>* "size" and "width" and "height" attributes: These attributes define the display size of each graphical image/object that is placed on a webpage.</li>
+              </ul>
+              <li>"a" (anchor) element: The "a" element identifies an anchored display/link content component of a webpage that is for a hyperlink (per attribute 'href = page URL or file path'); and the hyperlink creates a clickable link that accesses another webpage/file/resource location. The clickable items of hyperlinks can be picture/images or specific highlight text or even boundary "hot spot" area that is defined on a webpage. For textual hyperlinks...the tags of an "a" element are used to surround only the text that is intended to contain the clickable/underlined link.</li>
+              <li>"br" element: The "br" element creates a line of empty space...i.e, a line break...between 2 areas/blocks of content. This element is one of the rare ones that does not require a named closing tag; instead only a "/" character and an end bracket are required at the end of the element line/section.</li>
+              <li>"section" element: The "section" element is a semantic element that defines an organizational section in the text of a webpage.</li>
+              <li>"div" element: The "div" element marks a division section of the content of the webpage.</li>
+              <li>"span" element: The "span" element marks a separate inline span area of the content of the webpage.</li>
+              <li>"ul" (unordered list) element: The "ul" element marks a section of the webpage that contains an indented "un-ordered" not-numbered list that usually includes bullet/symbol characters; and the lists can have multiple levels and multiple styles of bullet characters. The "ul" element works in conjunction with and surrounds a section of "li" (list item) elements; Refer to below.</li>
+              <ul style="list-style-type: none">
+                <li>* "li" (list item) element: The "li" element marks an item of information that is contained in a single item of an on-ordered list (a bullet) or a single item of an ordered list (a number or sequence letter). Multiple "li" items typically exist in a list. The "li" element works in conjunction with and is surrounded by a "ul" (un-ordered list) element or an "ol" (ordered list) element; Refer to above.</li>
+              </ul>
+              <li>"ol" (ordered list) element: The "ol" element marks a section of the webpage that contains an indented "ordered" numbered/sequenced list; and the lists can have multiple levels and multiple styles of numbering/sequencing characters. The "ol" element works in conjunction with and surrounds a section of "li" (list item) elements; Refer to below.</li>
+              <ul style="list-style-type: none">
+                <li>* "li" (list item) element: Refer to the "li" element section at above.</li>
+              </ul>
+            </ul>
+            <li>"footer" element: This optional element marks the content of the standard repeated footer/bottom display section of a webpage. The "footer" section can be used to contain and information or/and links that display the author, copyright, contact information, sitemap, or/and navigation of the webpage.</li>
+          </ul>
+        </ul>
+      </section>
+
+      <section class="card" id="css-section">
+        <h2>CSS</h2>
+        <p>Cascading Style Sheets (CSS) style which is a programming language is used by developers to define how webpage content is presented to users. CSS defines the colors, aesthetics, visual layout (positions), and organization of webpages; HTML onlystrictly handles the structure and content of a webpage. CSS forms style definitions that use attributes and style rules for specific elements of an HTML page and format them using a wide range of style options which can include classes. Classes are categories that can be custom-applied to page attributes to cause style effects under specific usage circumstances. CSS style can be applied to a webpage in any of the following 3 ways:</>
+          <ul>
+          <li>inline style format setting per specific element tags; by using the "style=" attrbiute and value assignments</li>
+          <li>embedded internal style sheet that has style definitions that are contained within the "head" element of the webpage; by using a "style" element that is followed by sets of element names that are followed by brace character pairs that contain attribute specifications and values. The style sheet allows for easy maintenance of style effects.</li>
+          <li>external style sheet that is contained in a file that is separate from the webpage file; by using an "./assets/style.css" external file mapping specification that is linked to the webpage by using "link" attribute of the "head" element of the webpage (link rel="stylesheet" href="./assets/style.css"). The style sheet file is stored in the "assets" sub-folder of the webpage and contains sets of element names that are followed by brace character pairs that contain attribute specifications and values; The file does not contain a "style" element because the entire file signifies a style definition per the link reference. The style sheet allows for easy maintenance of style effects.</li>
+          </ul>
+          <p>The style sheet definition are more-organized and comprehensive by indicating the various page-element selectors and then their corresponding sets of style declarations (pairs of properties and values).</p>
+          <p>Separation of concerns is a widely used term in web development and refers to separating code into different files based on use. It is one of the key design principles that we practice in the boot camp. Separation of concerns is based on the idea that each section of code should have its own responsibility.</p>
+          <p>Webpage appearance is essentially based on the effects of a concept that is called the "CSS box model"...where every HTML element is essentially a box where each box consists of margins outside the element, and the element borders, padding, and content. All of those components collectively establish the appearance of the particular element.</p>
+          <p>Style sheet style rules can conveniently use multiple selectors for a single common set of shared style properties; and the "*" selector can be used to represent all of the selectors.</p>
+          <p>Classes can be used to add styles to certain elements. Class attributes (names designations) allow a CSS rule (set of style properties/effects) to be applied to and used for any desired elements by assigning the corresponding class selector. The class attribute is assigned to the desired elements.</p>
+        </section>
+   
+      <section class="card" id="git-section">
+        <h2>Git</h2>
+        <h3>Some Common Commands</h3>
+        <p>(Note: Refer to more-detailed descriptions at below and in the GitHub online Help documentation.)</p>
+        <ul>
+          <li>ssh -T git@github.com: establishes an SSH connection</li>
+          <li>git status: checks the current status and processing branch</li>
+          <li>git checkout -b "feature_branch_path": creates a new branch and switches to it</li>
+          <li>git add -A: stages/selects update files for transfer processing</li>
+          <li>git commit -m "comment": commits/readies update files for tranfser processing</li>
+          <li>git pull origin main: ensures that the current repository files are in the local workspace</li>
+          <li>git push origin "feature_branch": transfers the local update files to the remote repository</li>
+          <li>git checkout main: selects the local computer "main" branch</li>
+        </ul>
+        <h3>Overall Procedure for Processing New/Update Code Work for Projects</h3>
+        <p>Complete the following steps to save new/update code of project work from the local computer workspace to the GitHub cloud repository system so the code can be checked for accuracy (by collaborative teammates) and tracked (for version control) and saved for official storage and distribution access:</p>
+        <ol>
+          <li>Establish an SSH connection from the local computer to the GitHub cloud system; per command line: "ssh -T git@github.com". Enter the required security passphrase that is prompted for.</li>
+          <li>Make sure that the correct feature branch of the local computer workspace is the current process branch and make sure that the status of the git connection is good; per command line "git status". Add/Change the branch if necessary (per the resulting status message); per command: git checkout -b "feature_branch_path". Include the quote characters and replace the item "feature_branch_path" with the path text of the feature branch folder[s]; and exclude the period character.</li>
+          <li>Add the new/update code files of the local computer workspace to the Git staging area; per command line "git add -A". A successful status message should be displayed.
+          <li>Commit (Ready) the staged new/update code files of the local computer workspace for the GitHub repository transfer process; per command line: git commit -m "comment". Include the quote characters and replace the word "comment" with a brief description about the update; and exclude the period character. A successful status message should be displayed.</li>
+          <li>Make sure that the current local work branch files are up-to-date compared to the GitHub repository files before transferring (uploading) the new/update code to the GitHub system; per command: "git pull origin main". A successful status message should be displayed.</li>
+          <li>Transfer/Push all of the new/update code files from the local computer to a temporary processing "feature" area of the GitHub repository system; per command: git push origin "feature_branch_path". Include the quote characters and replace the item "feature_branch_path" with the path text of the feature branch folder[s]; and exclude the period character. A successful status message should be displayed.</li>
+          <li>Access the GitHub system and navigate to the "prework-study-guide" repository and click/access the "Pull Requests" tab to verify about the successful receiving of the transferred new/update code. The feature path branch name of the transferred code should be indicated in the tab display area.</li>
+          <li>Request for and define a Pull Request (merge pre-processing) by selecting the "New pull request" button of the "Pull Requests" tab. Then use the controls of the displayed window to set the "base" (merge-receive) branch as being the "main" branch...and set the "compare" branch as being the transferred "feature/type" branch; and set a brief title for the pull request and set a brief descriptive comment about the code update. Note: In normal project development work situations this step would also involve the selecting of 1 or more teammate[s] for purposes of code review for accuracy. Lastly click the "Create pull request" button to submit the request.</li>
+          <li>Merge the received comparison branch code files into the base/main branch code files by selecting the "Merge pull request" button and then confirming the merge request. Note: In normal project development work situations this step would also start/precede by with the comment results of the code-accuracy review[s] of 1 or more selected teammate[s].</li>
+          <li>Now that the involved code merge is completed and confirmed...delete the involved temporary working branch by clicking the "Delete branch" button of the displayed dialog box. And also close the involved corresponding GitHub issue by accessing the "Issues" tab and selecting the issue record and then clicking the "Close issue" button. The main branch should now display the merged new/update files that were transferred.</li>
+          <li>Update the local computer workspace main branch files with the updated files of the GitHub main branch...by separately entering the following commmands in the Git Bash console window:</li>
+          <ol type="a">
+            <li>Select the local computer "main" branch; per command: "git checkout main".</li>
+            <li>Transfer/Pull the updated files from the GitHub system to the local computer; per command "git pull origin main".</li>
+          </ol>
+        </ol>
+        <h3>Git-Related Systems and Applications and Attributes</h3>
+        <ul>
+          <li>GitLab: a class project data/information system; GitLab is a single application for the entire software development lifecycle; URL: "https://du.bootcampcontent.com/users/sign_in"</li>
+          <li>GitHub Cloud: an internet-based collaborative project development file/folder storage system and work environment that have robust version-control features and allow for convenient but secure remote file access for viewing and distributing; URL: "https://github.com/"</li>
+          <li>GitHub Bootcamp Repository Specification: attribute text that is used to identify a GitHub repository (set of project files and folders and data); with the "github_user_name" item and the "github_repository_name" item being user-specific and respository-specific; ATTRIBUTE: "git@github.com:github_user_name/github_repository_name.git"</li>
+          <li>GitHub Repository Clone Specification: attribute text that is used in some Git command-line commands to identify a GitHub project repository for purposes of copying/cloning the involved data files/folders; with the "github_user_name" item and the "github_repository_name" item being user-specific and respository-specific; ATTRIBUTE: "git clone git@github.com:github_user_name/github_repository_name.git"</li>
+          <li>GitBash: a local computer console terminal application that is used for issuing Git command-line commands from a local computer workspace to/from the GitHub system (cloud/internet or local deskop)</li>
+          <li>SSH: a secure shell protocol for network file/folder transactions that are executed by way of encrypted key files/fingerprints; used to connect to the GibHub server for a repository connection (for download/pull or upload/push)</li>
+          <li>GitHub Desktop: an available local computer application to quicken/ease some file transactions as compared to the busier internet/cloud GitHub system</li>
+        </ul>
+        </section>
+   
+      <section class="card" id="javascript-section">
+        <h2>JavaScript</h2>
+        <p>JavaScript (JS) is a high-level dynamic object-oriented programming (OOP) language that allows users to interact with websites. JavaScript can be used on websites to create dynamic effects, interactivity, data communication, animations, databases, expandability, and many other features. JavaScript is a critical tool in every web developer's tool kit...and much time is spent with programming it and maintaining it to enhance webpage experiences. JavaScript functionality uses control flow which is the order in which the computer executes the code. Control flow is used to establish conditional logic. In JavaScript, code runs from the first statement at the top of the page, down to the last statement at the bottom of the page. Control flow can be interrupted...if desired/applicable...by way of using conditional statements and loops to control the order in which code is executed, or if it is even executed at all.</p>
+        <p>JavaScript is implemented in a webpage by using the "script" element/section; and the "src" attribute of the "script" element can be used to link the webpage to an external script file ("script src='scripts/main.js'&nbsp") or/and some embedded in-file script code can be used on the webpage. The "script" element/section of a webpage is incorporated in and contained it the "body" element of the webpage definition.</p>
+        <p>JS variables...which are named containers that are used to hold information that can change (or not) throughout the process/usage of a webpage...are declared...i.e., added to the scope/awareness of the webpage intelligence and functionality...by using the "var" statement or/and the "let" keyword; and a semicolon is placed at the end of each JS statement to indicate the end of that statement. The custom user-created name that is assigned to each variable allows for the program of a webpage to access the variable at whenever necessary.</p>
+        <h5>Basic JavaScript features:</h5>
+        <ul>
+          <li>variables</li>
+          <li style="list-style-type: none">(named logical containers that hold specific context-specific values (changing (dynamic) or/and non-changing (static)))</li>
+          <li>data types and arguments</li>
+          <li style="list-style-type: none">(different forms and representations of information that can be processed by a program)</li>
+          <li>strings</li>
+          <li style="list-style-type: none">(textual items)</li>
+          <li>arrays and enumerations</li>
+          <li style="list-style-type: none">(variables that hold multiple related values)</li>
+          <li>complex multi-feature multi-property objects</li>
+          <li style="list-style-type: none">(variables that hold multiple related values and possibly also functions/processes/methods for more complexity/versatility/applicability/functionality)</li>
+          <li>structures and collections</li>
+          <li style="list-style-type: none">(variables that hold multiple related values of significant complexity and organization)</li>
+          <li>conditional logic and operators</li>
+          <li style="list-style-type: none">(for running specific items of code as-needed based on value conditions)</li>
+          <li>loops</li>
+          <li style="list-style-type: none">(for repeating specific items of code as-needed based on value conditions)</li>
+          <li>functions and methods and return values</li>
+          <li style="list-style-type: none">(small sub-programs that perform the defined steps of a specific task; and any resulting values that are processed can be delivered)</li>
+          <li>developer tools</li>
+          <li style="list-style-type: none">(creative/constructive applications that increase capability and convenience and compatibility)</li>
+          <li>events and responses and alerts</li>
+          <li style="list-style-type: none">(various occurrences in a program operating environment and then an ability of a program to react/deal with the occurrences in an intended/intelligent way)</li>
+        </ul>  
+      </section>
+    </main>
+
+    <footer>
+      <p>I can code!</p>
+    </footer>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
