@@ -14,7 +14,7 @@ NA
 
 To use this study guide...simply view the notes in each section depending on your topic interest preference. If you are not sure about your 1st or next topic pick and you want a suggestion...then you can use the topic-suggestion automatic feature of the study guide. To use that feature...open the Chrome DevTools component of the Chrome browser (if you have that system; and by pressing Command+Option+I (Mac) or Control+Shift+I (Windows))...and that system will contain a Console window that will display the topic suggestion information.
 
-![an example view of the topic-suggestion feature](assets/topic_suggestion_screen_example.jpg)
+![an example view of the topic-suggestion feature](assets/topic_suggestion_screen_example-.jpg)
 
 ## Credits
 
